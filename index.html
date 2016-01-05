@@ -1,0 +1,48 @@
+<head>
+  <script src="node_modules/jquery/dist/jquery.js" type="text/javascript"></script>
+  <script src="node_modules/backbone/node_modules/underscore/underscore.js" type="text/javascript"></script>
+  <script src="node_modules/backbone/backbone.js" type="text/javascript"></script>
+
+  <style>
+  .bar {
+    fill: steelblue;
+  }
+  </style>
+</head>
+<body>
+<script>
+var SVGView = Backbone.View.extend({
+  tagName: 'svg',
+
+  _createElement: function(tagName) {
+    return document.createElementNS('http://www.w3.org/2000/svg', tagName);
+  },
+
+  render: function() {
+    this.$el.append(new BarView().render().el);
+
+    return this;
+  }
+});
+
+var BarView = Backbone.View.extend({
+  tagName: 'rect',
+
+  _createElement: function(tagName) {
+    return document.createElementNS('http://www.w3.org/2000/svg', tagName);
+  },
+
+  render: function() {
+    this.$el.addClass('bar');
+    this.$el.attr('x', '0');
+    this.$el.attr('y', '0');
+    this.$el.attr('height', '100');
+    this.$el.attr('width', '100');
+
+    return this;
+  }
+});
+
+$('body').append(new SVGView().render().el);
+</script>
+</body>
