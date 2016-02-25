@@ -4,13 +4,15 @@
   "description": "Backbone Views with namespaced element support.",
   "main": "index.js",
   "dependencies": {
-    "backbone": "^1.2.3",
+    "backbone": "^1.2.3"
   },
   "devDependencies": {
-    "jquery": "^2.1.4"
+    "jquery": "^2.1.4",
+    "jsdom": "^8.0.4",
+    "mocha": "^2.4.5"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./node_modules/.bin/mocha"
   },
   "author": "Dana Silver <dsilver@middlebury.edu>",
   "license": "MIT"
