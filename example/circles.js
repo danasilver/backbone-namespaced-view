@@ -7,8 +7,9 @@
     tagName: 'svg',
 
     render: function() {
-      this.$el.attr('height', height);
-      this.$el.attr('width', width);
+      this.$el
+        .attr('height', height)
+        .attr('width', width);
 
       while (circles--) {
         this.$el.append(new CircleView().render().el);
@@ -22,10 +23,11 @@
     tagName: 'svg:circle',
 
     render: function() {
-      this.$el.css('fill', 'steelblue');
-      this.$el.attr('cx', Math.random() * width | 0);
-      this.$el.attr('cy', Math.random() * height | 0);
-      this.$el.attr('r', 2);
+      this.$el
+        .attr('cx', Math.random() * width | 0)
+        .attr('cy', Math.random() * height | 0)
+        .attr('r', 2)
+        .css('fill', 'steelblue');
 
       return this;
     }
