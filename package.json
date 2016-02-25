@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Backbone Views with namespaced element support.",
   "main": "index.js",
+  "repository": "danasilver/backbone-namespaced-view",
   "dependencies": {
     "backbone": "^1.2.3"
   },
