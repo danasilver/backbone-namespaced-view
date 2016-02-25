@@ -1,4 +1,4 @@
-# Backbone Namespaced View
+# Backbone Namespaced View [![Build Status](https://travis-ci.org/danasilver/backbone-namespaced-view.svg?branch=master)](https://travis-ci.org/danasilver/backbone-namespaced-view)
 
 Use namespaced elements in your Backbone Views.
 
