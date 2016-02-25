@@ -1,5 +1,5 @@
 {
-  "name": "backbone-svg",
+  "name": "backbone-namespaced-view",
   "version": "1.0.0",
   "description": "Backbone Views with namespaced element support.",
   "main": "index.js",
@@ -7,8 +7,7 @@
     "backbone": "^1.2.3",
   },
   "devDependencies": {
-    "jquery": "^2.1.4",
-    "d3": "^3.5.12"
+    "jquery": "^2.1.4"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
