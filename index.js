@@ -1,4 +1,8 @@
-// backbone.nsview
+/* Backbone.NSView 1.0.0
+ *
+ * (c) 2016 Dana Silver
+ * MIT License
+ */
 
 (function(factory) {
   if (typeof define === 'function' && define.amd) {
